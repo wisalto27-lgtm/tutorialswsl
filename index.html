@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gaming Gear Store</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0a0a0a;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* HERO */
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    background:
+    linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+    url('https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1920&q=80');
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:700px;
+}
+
+.hero h1{
+    font-size:60px;
+    font-weight:800;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#00d4ff;
+}
+
+.hero p{
+    font-size:18px;
+    color:#d0d0d0;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    padding:15px 35px;
+    background:#00d4ff;
+    color:#000;
+    font-weight:700;
+    border-radius:50px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 20px #00d4ff;
+}
+
+/* SECTION */
+section{
+    padding:80px 0;
+}
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:50px;
+    color:#00d4ff;
+}
+
+/* PRODUCTS */
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#111;
+    border:1px solid #222;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px rgba(0,212,255,.4);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#bdbdbd;
+    font-size:14px;
+}
+
+.price{
+    color:#00d4ff;
+    font-size:22px;
+    font-weight:700;
+    margin-top:15px;
+}
+
+/* BENEFITS */
+.benefits{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.benefit{
+    background:#111;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.benefit h3{
+    margin-bottom:10px;
+}
+
+/* TESTIMONI */
+.testimonials{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.testimonial{
+    background:#111;
+    padding:25px;
+    border-radius:15px;
+}
+
+.stars{
+    color:gold;
+    margin-bottom:10px;
+}
+
+/* CTA */
+.cta{
+    text-align:center;
+    background:linear-gradient(135deg,#00141d,#002d3d);
+}
+
+.cta h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.cta p{
+    color:#d0d0d0;
+    margin-bottom:30px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:30px;
+    background:#050505;
+    color:#888;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:40px;
+}
+
+.section-title{
+    font-size:30px;
+}
+
+.cta h2{
+    font-size:30px;
+}
+
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+<div class="container">
+<div class="hero-content">
+
+<h1>UPGRADE SETUP <span>GAMING</span> ANDA</h1>
+
+<p>
+Temukan perlengkapan gaming premium dengan kualitas terbaik.
+Mouse, Keyboard Mechanical, Headset Gaming, dan Aksesoris RGB
+untuk meningkatkan performa bermain Anda.
+</p>
+
+<a href="#produk" class="btn">BELI SEKARANG</a>
+
+</div>
+</div>
+</section>
+
+<!-- PRODUK -->
+<section id="produk">
+<div class="container">
+
+<h2 class="section-title">PRODUK UNGGULAN</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&fit=crop&w=800&q=80">
+<div class="card-content">
+<h3>Gaming Mouse RGB</h3>
+<p>Sensor presisi tinggi hingga 12000 DPI dengan desain ergonomis.</p>
+<div class="price">Rp299.000</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?auto=format&fit=crop&w=800&q=80">
+<div class="card-content">
+<h3>Mechanical Keyboard</h3>
+<p>Switch responsif dengan RGB lighting yang keren.</p>
+<div class="price">Rp699.000</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1599669454699-248893623440?auto=format&fit=crop&w=800&q=80">
+<div class="card-content">
+<h3>Gaming Headset Pro</h3>
+<p>Surround sound dengan mikrofon noise cancelling.</p>
+<div class="price">Rp499.000</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1598550476439-6847785fcea6?auto=format&fit=crop&w=800&q=80">
+<div class="card-content">
+<h3>Gaming Chair</h3>
+<p>Kursi gaming ergonomis untuk kenyamanan maksimal.</p>
+<div class="price">Rp1.999.000</div>
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- KEUNGGULAN -->
+<section>
+<div class="container">
+
+<h2 class="section-title">KENAPA MEMILIH KAMI?</h2>
+
+<div class="benefits">
+
+<div class="benefit">
+<h3>🚚 Pengiriman Cepat</h3>
+<p>Pesanan diproses dan dikirim dengan cepat ke seluruh Indonesia.</p>
+</div>
+
+<div class="benefit">
+<h3>🛡️ Garansi Resmi</h3>
+<p>Produk original dengan garansi dan kualitas terjamin.</p>
+</div>
+
+<div class="benefit">
+<h3>💰 Harga Terbaik</h3>
+<p>Dapatkan promo dan diskon menarik setiap hari.</p>
+</div>
+
+<div class="benefit">
+<h3>📞 Support 24/7</h3>
+<p>Tim customer service siap membantu kapan saja.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- TESTIMONI -->
+<section>
+<div class="container">
+
+<h2 class="section-title">TESTIMONI PELANGGAN</h2>
+
+<div class="testimonials">
+
+<div class="testimonial">
+<div class="stars">★★★★★</div>
+<p>"Keyboard mechanicalnya sangat responsif dan premium."</p>
+<br>
+<b>Andi - Jakarta</b>
+</div>
+
+<div class="testimonial">
+<div class="stars">★★★★★</div>
+<p>"Headset gamingnya nyaman dan suara sangat jernih."</p>
+<br>
+<b>Rizky - Bandung</b>
+</div>
+
+<div class="testimonial">
+<div class="stars">★★★★★</div>
+<p>"Mouse gaming terbaik yang pernah saya pakai."</p>
+<br>
+<b>Fajar - Surabaya</b>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+<div class="container">
+
+<h2>SIAP MENINGKATKAN PERFORMA GAMING?</h2>
+
+<p>
+Dapatkan perlengkapan gaming terbaik dengan harga spesial hari ini.
+</p>
+
+<a href="https://wa.me/6281234567890" class="btn">
+PESAN SEKARANG
+</a>
+
+</div>
+</section>
+
+<footer>
+© 2026 Gaming Gear Store. All Rights Reserved.
+</footer>
+
+</body>
+</html>
